@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="loading-active">
+        <div class="loading">
+                <h1>MONIKA KUMAR</h1>
+                <br>
+                <p>Loading Portifolio...</p>
+                <br>
+                <div class="box">
+                        <div class="bar"></div>
+                </div>
+        </div>
+        <nav class="nav-bar">
+                        <h4 class="logo">MONIKA KUMAR</h4>
+
+                        <ul class="menu">
+                                <li><a href="#HOME">HOME</a></li>
+                                <li><a href="#ABOUT">ABOUT</a></li>
+                                <li><a href="#SKILLS">SKILLS</a></li>
+                                <li><a href="#PROJECTS">PROJECTS</a></li>
+                        </ul>
+                </nav>
+        <section id="HOME" class="content">
+                
+                <video id="bg-video" autoplay muted playsinline loop>
+                        <source src="bg-video.mp4" type="video/mp4">
+                </video>
+
+                
+                <div class="Intro">
+                <h1>
+                        <br><br>Monika Kumar<br> Full Stack Developer
+                </h1>
+                <p>I am crafting modern,responsive Web application<br>
+                 with clean UI and robbost backend</p>
+                 <br>
+                <button class="neon-btn">Contact Us</button>
+                </div>
+        </section>
+        <section id="ABOUT">
+                <br><br>
+                <p>
+                      <h2>Abour Me</h2>
+                      <br>
+                      <hr>
+                      <br><br>
+                      <div class="div-para">
+                      <p>Pixel Panther is a modern web development studio focused on building fast, scalable and visually powerful digital experiences. We specialize on creating responsive websites and full stack applications that help business grow and stand out in the digital world. From idea to execution. we combine clean design,efficient code, and smart solutions to deliver real impact. At Pixel Panther, <i><b>Every Pixel atters</b></i></p></div>
+                </p>
+        </section>
+        <section id="SKILLS">
+                <h1>My Skills</h1>
+        <br>
+      <div class="container">
+      <div class="box1">
+          HTML
+          <br><br>
+          <img src="html_logo.png" alt="HTML logo">
+          <br>
+          90%
+          <br><br>
+          <hr>
+       </div>
+      <div class="box2">
+        CSS
+        <br><br>
+        <img src="css logo.png" alt="CSS logo">
+        <br>
+          90%
+          <br><br>
+          <hr>
+     </div>
+      <div class="box3">
+        JavaScript
+        <br><br>
+        <img src="JS-LOGO.png" alt="Js logo">
+        <br>
+          90%
+          <br><br>
+          <hr>
+      </div>
+      <div class="box4">
+       ReactJs
+       <br><br>
+       <img src="REACT LOGO.png" alt="React logo">
+       <br>
+          90%
+          <br><br>
+          <hr>
+      </div>
+      <div class="box5">
+       NodeJs
+       <br><br>
+       <img src="NODE-JS.png" alt="Node js Logo">
+       <br>
+          90%
+          <br><br>
+          <hr>
+       </div>
+      <div class="box6">
+        AngularJs
+        <br><br>
+        <img src="ANGULAR LOGO.png" alt="angular logo">
+        <br>
+          90%
+          <br><br>
+          <hr>
+</div>
+      <div class="box7">
+        VueJs
+        <br><br>
+        <img src="VUE JS.png" alt="vue js">
+        <br>
+          90%
+          <br><br>
+          <hr>
+       </div>
+      <div class="box3">
+        MySQL
+        <br><br>
+        <img src="mysql-logo-png_seeklogo-96578.png" alt="">
+        <br>
+          90%
+          <br><br>
+          <hr>
+      </div>
+       <div class="box2">
+        Git
+        <br><br>
+        <img src="git-logo-png_seeklogo-297887.png" alt="">
+        <br>
+          90%
+          <br><br>
+          <hr>
+</div>
+      <div class="box3">
+        GitHub
+        <br><br>
+        <img src="github.jpg" alt="">
+        <br>
+          90%
+          <br><br>
+          <hr>
+</div>
+
+    </div>
+        </section>
+        <section id="PROJECTS">
+                <p class="content-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, necessitatibus veniam recusandae harum, culpa maxime rerum et obcaecati deserunt dignissimos iusto ipsam. Fuga libero consectetur dolores magni culpa, eos quos.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, repellendus commodi dolor ullam, tempore ab placeat, ad quos minima dolorem. Aperiam quia natus ducimus explicabo assumenda vel eaque perferendis.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem enim quibusdam beatae quidem aut reprehenderit iste atque architecto officiis mollitia consequuntur omnis aliquam, tempore ullam ex inventore fugit quia at?
+                </p>
+        </section>
+        <script>
+               
+                window.addEventListener("load", () => {
+                        setTimeout(() => {
+                                document.querySelector(".loading").style.display = "none";
+                                 document.body.classList.remove("loading-active");
+
+                                const nav = document.querySelector(".nav-bar");
+                                nav.style.opacity = "1";
+                                nav.style.visibility = "visible";
+                                nav.style.pointerEvents = "auto";
+
+
+                                const sections = document.querySelectorAll("#HOME,#ABOUT,#SKILLS,#PROJECTS");
+
+                                sections.forEach(sec => {
+                                        sec.style.opacity = "1";
+                                sec.style.visibility = "visible";
+                                sec.style.pointerEvents = "auto";
+                                })
+                                sec.style.opacity = "1";
+                                sec.style.visibility = "visible";
+                                sec.style.pointerEvents = "auto";
+                        }, 4000);
+
+                        const video = document.getElementById("bg-video");
+                        if (video) {
+                                video.addEventListener("ended", () => {
+                                        video.currentTime = video.duration - 0.05;
+                                        video.pause();
+
+                                });
+
+
+                        }
+
+                });
+        </script>
+</body>
